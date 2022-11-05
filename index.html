@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelPet - Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<body>
+  <nav id="navegacao">
+    <div class="wrapper">
+      <a class="logo" href="#home">HelPet</a>
+
+      <div class="menu">
+        <ul>
+          <li><a onclick="closeMenu()" href="#home">Início</a></li>
+          <li><a onclick="closeMenu()" href="#servicos">Serviços</a></li>
+          <li><a onclick="closeMenu()" href="#sobre">Sobre a HelPet</a></li>
+        </ul>
+      </div>
+
+      <button
+        aria-expanded="false"
+        aria-label="Abrir menu"
+        onclick="openMenu()"
+        class="open-menu"
+      >
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#284636" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 12H30" stroke="#284636" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 28L30 28" stroke="#284636" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>        
+      </button>
+
+      <button
+        aria-expanded="true"
+        aria-label="Fechar menu"
+        onclick="closeMenu()"
+        class="close-menu"
+      >
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+              
+      </button>
+    </div>
+  </nav>
+
+  <section class="titulo">
+    <header>Boas-vindas</header>
+  </section>
+
+  <section id="main">
+    <div class="wrapper">
+      <div class="cards">
+        <div class="card">
+          <div class="col-a">
+            <a>Login - Acesse sua conta</a>
+            <div class="dados">
+              <form action="">
+                <input type="text" placeholder="E-mail ou Usuário" name="username" id="username">
+                <input type="password" name="password" id="password" placeholder="Senha">
+              </form>
+            </div>
+            <div class="manterConectado">
+             <!-- <div class="checkbox">
+                <input type="checkbox" class="check" id="check">
+                <label for="check" class="check-label">Mantenha-me conectado</label>
+              </div> -->
+    
+              <a class="esqueceuSenha" href="#">Esqueci minha senha</a>
+            </div>
+            <div class="continuar">
+              <form action="">
+                <button type="submit" class="continuar">Continuar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="col-b">
+            <a>Cadastro - Crie sua conta</a>
+            <div class="dados">
+              <form action="">
+                <input type="text" placeholder="Usuário" name="username" id="username">
+                <input type="text" name="email" id="email" placeholder="E-mail">
+                <input type="password" name="password" id="password" placeholder="Senha">
+                <button type="submit" class="contaONG">Criar conta para ONG/Protetor</button>
+                <button type="submit" class="contaAdotar">Criar conta para adotar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
